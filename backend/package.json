@@ -1,0 +1,27 @@
+{
+  "name": "geoface-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Camera & Geofence Verified Attendance System",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "keywords": [
+    "attendance",
+    "geofence",
+    "face-detection",
+    "haversine",
+    "geolib"
+  ],
+  "author": "Antigravity",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "geolib": "^3.3.4",
+    "uuid": "^11.1.0"
+  }
+}

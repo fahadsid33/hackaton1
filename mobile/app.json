@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "GeoFace Mobile",
+    "slug": "geoface-mobile-attendance",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#0f172a"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Camera is required to detect single face presence and verify attendance.",
+        "NSLocationWhenInUseUsageDescription": "High-accuracy GPS is required to verify you are inside the company office perimeter."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0f172a"
+      },
+      "permissions": [
+        "CAMERA",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow GeoFace to access your camera for attendance."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Allow GeoFace to access your location to verify office geofence."
+        }
+      ]
+    ]
+  }
+}
